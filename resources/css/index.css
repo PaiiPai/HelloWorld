@@ -1,43 +1,103 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-.name {
-  color: SeaGreen;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
 }
 
-.name, .title {
-  text-align: center;
+html {
+	font-size: 18px;
 }
 
-p, li {
-  font-size: 18px;
+h1 {
+	margin: 1rem 0 1rem 1.5rem;
+}
+
+h2 {
+	margin: 0.75rem 0 0.75rem 1.1rem;
+}
+
+h3 {
+	margin: 0.5rem 0 0.5rem 0.88886rem;
+}
+
+
+p {
+	font-size: 1rem;
+	text-indent: 5%;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-nav {
-  padding: 30px;
+.profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1E90FF;
+	padding: 1.5rem 0;
 }
 
-nav a {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 150px;
-  height: 40px;
-  background-color: midnightblue;
-  color: gainsboro;
-  border-radius: 5px;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 7px;
-  
+.profile-container .intro {
+	width: 40%;
+	margin-right: 0.5rem;
 }
 
-.profile {
-  position: absolute;
-  width: 200px;
-  right: 300px;
+.profile-container .photo {
+	margin-left: 0.5rem;
+	width: 12%;
+	overflow: hidden;
+}
+
+.profile-container .photo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.name,
+.title {
+	text-align: center;
+	color: #fff;
+}
+
+header nav {
+	max-width: 100%;
+	margin: 3% 4.5%;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav li {
+	padding: 0.5rem 4rem;
+	background-color: #191970;
+	border-radius: 0.27778rem;
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 0;
+	box-shadow: #cdcdd1 -1px 0 0 inset, #cdcbb1 1px 0 0 inset, 0 3px 3px #b8b8b8, 0 -3px 3px #b8b8b8, 0 3px 3px #d1d1d1, 0 -3px 3px #d1d1d1;
+	text-shadow: 0 0 3px #3d3d7e80, 0 0 3px #6969da80;
+}
+
+nav li a {
+	color: #ccc;
+}
+
+nav .first {
+	border-radius: 0.4rem 0 0 0.4rem;
+	box-shadow: #cdcdd1 -1px 0 0 inset, #cdcbb1 1px 0 0 inset, 0 3px 3px #b8b8b8, -3px -3px 3px #b8b8b8, 0 3px 3px #d1d1d1, -3px -3px 3px #d1d1d1;
+}
+
+nav .last {
+	border-radius: 0 0.4rem 0.4rem 0;
+	box-shadow: #cdcdd1 -1px 0 0 inset, #cdcbb1 1px 0 0 inset, 3px 3px 3px #b8b8b8, 0 -3px 3px #b8b8b8, 3px 3px 3px #d1d1d1, 0 -3px 3px #d1d1d1;
+}
+
+.bio-container {
+	width: 40%;
+	margin: 0 2.5%;
 }

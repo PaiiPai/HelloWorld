@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ye Myat Paing</title>
-        <link rel="stylesheet" href="resources/css/index.css">
-    </head>
 
-    <body>
-        <header>
-            <img class="profile" src="resources/image/no_profile_icon.webp" alt="no_profile_icon">
-            <h1 class="name">Hi! I'm Ye Myat Paing</h1>
-            <h2 class="title">I'm a Software Engineer based in Myanmar</h2>
-            <nav>
-                <a href="#biography">Biography</a>
-                <a href="#knowledge">Knowledge</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ye Myat Paing</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+</head>
 
-        <section id="Biography">
+<body>
+    <header>
+        <div class="profile-container">
+            <div class="profile intro">
+                <h1 class="name">Hi! I'm Ye Myat Paing</h1>
+                <h2 class="title">A Software Engineer, based in Myanmar</h2>
+            </div>
+            <div class="profile photo">
+                <img class="profile" src="resources/image/no_profile_icon.webp" alt="no_profile_icon">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="first">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#biography">Biography</a>
+                </li>
+                <li>
+                    <a href="#knowledge">Knowledge</a>
+                </li>
+                <li>
+                    <a href="#project">Projects</a>
+                </li>
+                <li class="last">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="biography" class="biography">
+        <div class="bio-container">
             <h3>Biography</h3>
             <article>
                 <p>
-                    Enthusiastic and detail-oriented Junior <strong>Software Engineer</strong> with a solid foundation in computer science and programming principles. Adept at collaborating with cross-functional teams to develop and implement innovative software solutions. Passionate about learning new technologies and solving real-world problems through code.
+                    Enthusiastic and detail-oriented Junior <strong>Software Engineer</strong> with a solid foundation
+                    in
+                    computer science and programming principles. Adept at collaborating with cross-functional teams to
+                    develop and implement innovative software solutions. Passionate about learning new technologies and
+                    solving real-world problems through code.
                 </p>
             </article>
-        </section>
+        </div>
 
-        <section id="knowledge">
-            <h3>Skills & Knowledge I have</h3>
-            <ul>
-                <li>Developing interactive websites with HTML5, CSS & JavaScript</li>
-                <li>Object Oriented Programming with JavaScript</li>
-                <li>Object Oriented Programming with Java</li>
-            </ul>
-        </section>
+        <div class="card-stack-container">
+            <div class="card-stack">
+                <div class="card">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="Project">
-            <h3>Projects I have handled</h3>
-            <p>
-                This includes all projects including the projects I have done while learning at <a href="codecademy.com">Codecademy</a>, and others.
-            </p>
-            <ul>
-                <li>
-                    <a href="https://paicheatsheet.github.io/"> My own cheat sheet </a>
-                </li>
-                <li>Object Oriented Programming with JavaScript</li>
-                <li>Object Oriented Programming with Java</li>
-            </ul>
-        </section>
-    </body>
+    <section id="knowledge">
+        <h3>Skills & Knowledge I have</h3>
+        <ul>
+            <li>Developing interactive websites with HTML5, CSS & JavaScript</li>
+            <li>Object Oriented Programming with JavaScript</li>
+            <li>Object Oriented Programming with Java</li>
+        </ul>
+    </section>
+
+    <section id="Project">
+        <h3>Projects I have handled</h3>
+        <p>
+            This includes all projects including the projects I have done while learning at <a
+                href="codecademy.com">Codecademy</a>, and others.
+        </p>
+        <ul>
+            <li>
+                <a href="https://paicheatsheet.github.io/"> My own cheat sheet </a>
+            </li>
+        </ul>
+    </section>
+</body>
+
 </html>
