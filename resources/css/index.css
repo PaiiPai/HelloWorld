@@ -74,7 +74,6 @@ nav ul {
 }
 
 nav li {
-	padding: 0.5rem 4rem;
 	background-color: #191970;
 	border-radius: 0.27778rem;
 	font-size: 1rem;
@@ -85,6 +84,7 @@ nav li {
 }
 
 nav li a {
+	padding: 0.5rem 4rem;
 	color: #ccc;
 }
 
