@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="./js/main.js" async></script>
 </head>
 
 <body>
@@ -82,23 +86,69 @@
         <h2>My Works</h2>
 
         <div class="project-container">
-            <div class="project-content">
-                <h3>A Single-Paged Website for a Company</h3>
-                <p>When I was learning HTML and CSS, I decided to tweak my knowledge and challenge myself how much
-                    innovative I can become. If you would like to view my web project, <a
-                        href="/flexbox-business-site-starting/">Click here.</a></p>
+            <div class="first project-content">
+                <div class="project-detail">
+                    <h3>A Single-Paged Website for a Company</h3>
+                    <p>When I was learning HTML and CSS, I decided to tweak my knowledge and challenge myself how much
+                        innovative I can become. If you would like to view my web project, <a
+                            href="/flexbox-business-site-starting/">Click here.</a></p>
+                </div>
+                <figure class="project-overview">
+                    <img src="resources/image/flexbox-website.PNG" alt="A hiking club website, named PaiHub">
+                </figure>
             </div>
-            <figure class="project-overview">
-                <img src="" alt="">
-            </figure>
+
+            <div class="project-content">
+                <div class="project-detail">
+                    <h3>A Fully Responsive Club Website</h3>
+                    <p>This project was originally for Codecademy challenge project using my own comprehension of
+                        responsive
+                        designs: <a href="/responsive-club-starting/">To Website -></a></p>
+                </div>
+                <figure class="project-overview">
+                    <img src="resources/image/responsive-club.PNG" alt="A hiking club website, named PaiHub">
+                </figure>
+            </div>
+
+            <div class="project-content">
+                <div class="project-detail">
+                    <h3>A Credit Card Checker project</h3>
+                    <p>Utilizing my knowledge of arrays, iterations and JavaScript built-in Array object methods, I
+                        built
+                        this perfect API for checking credit cards for validation. Note that all validation processes
+                        are
+                        undergone by Luhn's algorithm. <a href="https://github.com/PaiiPai/credit-card-checker">View
+                            Source Code</a></p>
+                </div>
+                <figure class="project-overview">
+                    <img src="resources/image/credit-card-checkerPNG.PNG" alt="A hiking club website, named PaiHub">
+                </figure>
+            </div>
+
+           
         </div>
 
         <div class="btn-container">
-            <a href="#" class="btn">Previous Project</a>
-            <a href="#" class="btn">Next Project</a>
+            <button class="btn" onclick="prev()">&lt;&lt; Previous Project</button>
+            <button class="btn" onclick="next()">Next Project &gt;&gt;</button>
         </div>
 
     </section>
+
+    <div class="attribution">
+        <span>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></span>
+    </div>
+
+    <footer id="contact" class="contact">
+        <p>
+            <a href="https://www.facebook.com/ye.paing.129"><i class="fi fi-brands-facebook"></i></a> | <a
+                href="https://www.instagram.com/ym_pai/"><i class="fi fi-brands-instagram"></i></a> | <a
+                href="https://github.com/PaiiPai"><i class="fi fi-brands-github"></i></a> | <a
+                href="mailto:paingfamily121@gmail.com"><i class="fi fi-rr-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/ye-myat-paing-4634b6251/"><i class="fi fi-brands-linkedin"></i></a>
+        </p>
+    </footer>
+
 </body>
 
 </html>

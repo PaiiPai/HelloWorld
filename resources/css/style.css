@@ -218,10 +218,74 @@ nav li:hover a:hover:before {
 }
 
 .project-container {
+	margin: 0 5%;
 	display: flex;
 	justify-content: center;
 }
 
 .project-container h3 {
 	font-size: 1.25rem;
+}
+
+.project-content {
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-detail {
+	max-width: 40%;
+	margin: auto 0;
+}
+
+.project-content.first {
+	display: flex;
+}
+
+.project-overview {
+	width: 40%;
+	overflow: hidden;
+}
+
+.project-overview img {
+	max-width: 100%;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 5%;
+}
+
+.btn {
+	padding: 1.125rem 1.875rem;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	background-color: #6C757D;
+	color: #E0E6F0;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.btn:hover {
+	background-color: #8f979e;
+	color: #3a3a3a;
+}
+
+.btn:active {
+	outline: 3px solid #3a3a3a;
+}
+
+.attribution {
+	margin-left: 4.2%;
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
+
+.contact a {
+	color: #3a3a3a;
 }
