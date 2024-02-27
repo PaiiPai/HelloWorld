@@ -48,11 +48,12 @@ header {
 }
 
 .nav-item {
+	opacity: 0;
 	transform: translateY(-75%);
-	animation: fall 1.5s ease-in-out forwards;
+	animation: fadeIn 1s ease-in-out forwards, fall 1.5s ease-in-out forwards;
 }
 
-header {
+.fadeIn {
 	opacity: 0;
 	animation: fadeIn 1s ease-in-out forwards;
 }
