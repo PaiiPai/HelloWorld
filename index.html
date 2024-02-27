@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ye Myat Paing</title>
+    <!-- style-links and references -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,154 +15,470 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <script src="./js/main.js" async></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
-    <header>
-        <div class="profile">
-            <div class="intro">
-                <h1 class="name">Hi! I'm Ye Myat Paing</h1>
-                <h2 class="title">A Full-stack Engineer, based in Myanmar</h2>
-            </div>
-            <div class="photo-container">
-                <img class="photo" src="resources/image/profile.jpg" alt="no_profile_icon">
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+    <!-- svg content -->
+    <svg class="d-none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="responsive" viewBox="0 0 1800 1800">
+            <path fill="#dee2e6bf" d="M1748.663,978.006h-39.578h-49.802H1448.09c-23.352,0-42.35,18.998-42.35,42.354v40.533v49.801v193.7
+                v49.801v212.886c0,23.355,18.998,42.354,42.35,42.354h300.573c23.354,0,42.354-18.998,42.354-42.354v-546.721
+                C1791.017,997.004,1772.018,978.006,1748.663,978.006z M1741.215,1559.633h-285.674v-205.438v-49.801v-193.7v-49.801v-33.086
+                h203.742h49.802h32.13V1559.633z" />
+            <path fill="#dee2e6bf" d="M1598.133,1479.07c-13.263,0-24.011,10.755-24.011,24.011c0,13.267,10.748,24.012,24.011,24.012
+                c13.257,0,24.012-10.745,24.012-24.012C1622.145,1489.825,1611.39,1479.07,1598.133,1479.07z" />
+            <path fill="#dee2e6bf" d="M1639.063,1060.893c-1.765-0.963-3.763-1.561-5.916-1.561H1563.6c-2.154,0-4.151,0.598-5.916,1.561
+                c-3.873,2.111-6.534,6.17-6.534,10.891c0,6.875,5.575,12.45,12.45,12.45h69.547c6.875,0,12.45-5.575,12.45-12.45
+                C1645.597,1067.063,1642.936,1063.004,1639.063,1060.893z" />
+            <path fill="#dee2e6bf" d="M58.785,261.847c0-11.842,8.07-21.479,17.991-21.479h1540.741c9.925,0,17.998,9.636,17.998,21.479v674.657
+                h8.007h41.794V261.847c0-39.303-30.413-71.28-67.799-71.28H76.776c-37.382,0-67.792,31.977-67.792,71.28v1021.067
+                c0,39.304,30.41,71.28,67.792,71.28h614.065v205.285H453.896c-13.753,0-24.901,11.147-24.901,24.9s11.148,24.901,24.901,24.901
+                h261.846h262.823h261.847c13.752,0,24.9-11.148,24.9-24.901s-11.148-24.9-24.9-24.9h-236.946v-205.285h353.185v-48.397v-1.403
+                H76.776c-9.921,0-17.991-9.634-17.991-21.479v-172.221H1356.65v-24.06v-25.741H58.785V261.847z M953.664,1559.479H740.644
+                v-205.285h213.021V1559.479z" />
+            <path fill="#dee2e6bf" d="M808.262,1205.613c0,21.476,17.415,38.887,38.886,38.887c21.472,0,38.894-17.411,38.894-38.887
+                c0-21.475-17.421-38.89-38.894-38.89C825.677,1166.724,808.262,1184.139,808.262,1205.613z" />
+            <path fill="#dee2e6bf" d="M273.199,457.516h625.589c13.753,0,24.9-11.148,24.9-24.901s-11.147-24.9-24.9-24.9H273.199
+                c-13.753,0-24.9,11.147-24.9,24.9S259.446,457.516,273.199,457.516z" />
+            <path fill="#dee2e6bf" d="M1421.102,556.41H273.199c-13.753,0-24.9,11.147-24.9,24.9c0,13.753,11.147,24.901,24.9,24.901h1147.902
+                c13.753,0,24.9-11.147,24.9-24.901C1446.002,567.558,1434.854,556.41,1421.102,556.41z" />
+            <path fill="#dee2e6bf" d="M1421.102,705.102H273.199c-13.753,0-24.9,11.148-24.9,24.901s11.147,24.9,24.9,24.9h1147.902
+                c13.753,0,24.9-11.147,24.9-24.9S1434.854,705.102,1421.102,705.102z" />
+            <path fill="#dee2e6bf" d="M1421.102,853.798H273.199c-13.753,0-24.9,11.147-24.9,24.9s11.147,24.901,24.9,24.901h1147.902
+                c13.753,0,24.9-11.148,24.9-24.901S1434.854,853.798,1421.102,853.798z" />
+        </symbol>
+        <symbol id="git" viewBox="0 0 32 32">
+            <path
+                d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z"
+                fill="#EE513B" />
+            <path
+                d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z"
+                fill="white" />
+        </symbol>
+        <symbol id="database" viewBox="0 0 32 32">
+            <ellipse class="st0" cx="14" cy="8" rx="10" ry="5" />
+            <path class="st0"
+                d="M30.8,21.2c-1.1,0.2-2,0-2.4-0.7c-0.4-0.7-0.1-1.7,0.6-2.5c-0.9-0.9-1.9-1.5-3.1-1.8c-0.3,1-1,1.8-1.8,1.8
+	s-1.5-0.7-1.8-1.8c-1.2,0.3-2.3,0.9-3.1,1.8c0.7,0.8,1,1.8,0.6,2.5c-0.4,0.7-1.4,0.9-2.4,0.7C17.1,21.8,17,22.4,17,23
+	s0.1,1.2,0.2,1.8c1.1-0.2,2,0,2.4,0.7c0.4,0.7,0.1,1.7-0.6,2.5c0.9,0.9,1.9,1.5,3.1,1.8c0.3-1,1-1.8,1.8-1.8s1.5,0.7,1.8,1.8
+	c1.2-0.3,2.3-0.9,3.1-1.8c-0.7-0.8-1-1.8-0.6-2.5c0.4-0.7,1.4-0.9,2.4-0.7c0.2-0.6,0.2-1.2,0.2-1.8S30.9,21.8,30.8,21.2z" />
+            <g>
+                <path d="M24,24c-0.1,0-0.3,0-0.4-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.2-0.2-0.3c0-0.1-0.1-0.3-0.1-0.4
+		c0-0.1,0-0.3,0.1-0.4c0.1-0.1,0.1-0.2,0.2-0.3c0.4-0.4,1-0.4,1.4,0c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.3,0.1,0.4
+		c0,0.1,0,0.3-0.1,0.4c-0.1,0.1-0.1,0.2-0.2,0.3C24.5,23.9,24.3,24,24,24z" />
+            </g>
+            <path class="st0" d="M23.3,17.8c0.4-0.6,0.7-1.2,0.7-1.8V8" />
+            <path class="st0" d="M4,8v8c0,2.8,4.5,5,10,5c2.1,0,4-0.3,5.6-0.9" />
+            <path class="st0" d="M4,16v8c0,2.8,4.5,5,10,5c2,0,3.8-0.3,5.3-0.8" />
+        </symbol>
+        <symbol id="api" viewBox="0 0 1024 1024">
+            <path d="M432.4 453.5l-17 46.7h34.4z" fill="#dee2e6" />
+            <path
+                d="M725.3 259.7H312.2c-16.5 0-30 13.5-30 30v413.1c0 16.5 13.5 30 30 30h413.1c16.5 0 30-13.5 30-30V289.7c0-16.6-13.5-30-30-30z m-98.8 164.5h25.4V550h-25.4V424.2z m-116.5 0h40.8c15.5 0 25.5 0.6 30.2 1.9 7.2 1.9 13.2 6 18.1 12.3 4.9 6.3 7.3 14.5 7.3 24.5 0 7.7-1.4 14.2-4.2 19.5s-6.4 9.4-10.7 12.4c-4.3 3-8.7 5-13.2 6-6.1 1.2-14.8 1.8-26.4 1.8h-16.6V550H510V424.2z m-90.7 0h26.9L496.5 550h-27.6l-11-28.6h-50.3L397.2 550h-27l49.1-125.8z m229.1 273.3H352.6c-19.4 0-35.1-15.7-35.1-35.1v-295c0-5.5 4.5-10 10-10s10 4.5 10 10v295c0 8.3 6.8 15.1 15.1 15.1h295.8c5.5 0 10 4.5 10 10s-4.4 10-10 10z"
+                fill="#dee2e6" />
+            <path
+                d="M569.4 479.2c3.4-1.3 6-3.4 7.9-6.2 1.9-2.8 2.9-6.1 2.9-9.8 0-4.6-1.3-8.4-4-11.3-2.7-3-6.1-4.8-10.2-5.6-3-0.6-9.1-0.9-18.3-0.9h-12.3v35.7h13.9c10 0.1 16.7-0.6 20.1-1.9z"
+                fill="#dee2e6" />
+            <path
+                d="M648.4 677.5H352.6c-8.3 0-15.1-6.8-15.1-15.1v-295c0-5.5-4.5-10-10-10s-10 4.5-10 10v295c0 19.4 15.7 35.1 35.1 35.1h295.8c5.5 0 10-4.5 10-10s-4.4-10-10-10z"
+                fill="#06F3FF" />
+            <path
+                d="M865 386.5c11 0 20-9 20-20s-9-20-20-20h-69.7v-56.8c0-38.6-31.4-70-70-70h-27.8v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3H611v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3h-46.5v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3H438v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3h-85.8c-38.6 0-70 31.4-70 70v56.8h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7V433h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7v46.5h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7V606h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7v56.8c0 38.6 31.4 70 70 70H343v72.5c0 11 9 20 20 20s20-9 20-20v-72.5h46.5v72.5c0 11 9 20 20 20s20-9 20-20v-72.5H516v72.5c0 11 9 20 20 20s20-9 20-20v-72.5h46.5v72.5c0 11 9 20 20 20s20-9 20-20v-72.5h82.8c38.6 0 70-31.4 70-70V646H865c11 0 20-9 20-20s-9-20-20-20h-69.7v-46.5H865c11 0 20-9 20-20s-9-20-20-20h-69.7V473H865c11 0 20-9 20-20s-9-20-20-20h-69.7v-46.5H865zM755.3 702.7c0 16.5-13.5 30-30 30H312.2c-16.5 0-30-13.5-30-30v-413c0-16.5 13.5-30 30-30h413.1c16.5 0 30 13.5 30 30v413z"
+                fill="#005BFF" />
+            <path
+                d="M407.6 521.4h50.3l11 28.6h27.6l-50.4-125.8h-26.9l-49 125.8h27l10.4-28.6z m24.8-67.9l17.3 46.7h-34.3l17-46.7zM535.4 502.6H552c11.5 0 20.3-0.6 26.4-1.8 4.5-1 8.9-3 13.2-6 4.3-3 7.9-7.1 10.7-12.4s4.2-11.8 4.2-19.5c0-10-2.4-18.2-7.3-24.5-4.9-6.3-10.9-10.4-18.1-12.3-4.7-1.3-14.8-1.9-30.2-1.9H510V550h25.4v-47.4z m0-57.1h12.3c9.2 0 15.2 0.3 18.3 0.9 4.1 0.7 7.5 2.6 10.2 5.6 2.7 3 4 6.8 4 11.3 0 3.7-1 7-2.9 9.8-1.9 2.8-4.6 4.9-7.9 6.2-3.4 1.3-10.1 2-20.1 2h-13.9v-35.8zM626.5 424.2h25.4V550h-25.4z"
+                fill="#005BFF" />
+        </symbol>
+        <symbol id="micro" viewBox="0 0 73 73">
+            <g id="fundamentals/javascript/dom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Bitmap" transform="translate(2.000000, 2.000000)" fill-rule="nonzero">
+                    <rect id="Mask" stroke="#363644" stroke-width="2" fill="#dee2e6" x="-1" y="-1" width="71"
+                        height="71" rx="14">
+
+                    </rect>
+                    <g id="diagram" transform="translate(15.000000, 17.000000)">
+                        <rect id="Rectangle-path" fill="#1C1C2C" x="19" y="9" width="1" height="16">
+
+                        </rect>
+                        <polygon id="Shape" fill="#1C1C2C"
+                            points="35 26 33.6521739 26 33.6521739 18.3846154 5.34782609 18.3846154 5.34782609 26 4 26 4 17 35 17">
+
+                        </polygon>
+                        <path
+                            d="M4.5,35 C2.01471429,35 0,32.9852857 0,30.5 C0,28.0147143 2.01471429,26 4.5,26 C6.98528571,26 9,28.0147143 9,30.5 C9,32.9852857 6.98528571,35 4.5,35 Z"
+                            id="Shape" fill="#FF7163">
+
+                        </path>
+                        <path
+                            d="M34.5,35 C32.0147143,35 30,32.9852857 30,30.5 C30,28.0147143 32.0147143,26 34.5,26 C36.9852857,26 39,28.0147143 39,30.5 C39,32.9852857 36.9852857,35 34.5,35 Z"
+                            id="Shape" fill="#FF7163">
+
+                        </path>
+                        <path
+                            d="M19.5,35 C17.0147143,35 15,32.9852857 15,30.5 C15,28.0147143 17.0147143,26 19.5,26 C21.9852857,26 24,28.0147143 24,30.5 C24,32.9852857 21.9852857,35 19.5,35 Z"
+                            id="Shape" fill="#FF7163">
+
+                        </path>
+                        <rect id="Rectangle-path" fill="#3366FF" x="15" y="0" width="9" height="9">
+
+                        </rect>
+                    </g>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="solving" viewBox="-63 65 128 128">
+            <path fill="#dee2e6bf" d="M-32.6,131.7l-2.1,2.2l4,3.7l2.1-2.2c0.9,0.5,1.9,0.9,2.8,1l0.1,3l5.4-0.2l-0.1-3c1-0.2,1.9-0.7,2.7-1.2l2.2,2.1l3.7-4
+	l-2.2-2.1c0.5-0.9,0.9-1.9,1-2.8l3-0.1l-0.2-5.5l-3,0.1c-0.2-1-0.7-1.9-1.2-2.7l2.1-2.2l-4-3.7l-2.1,2.2c-0.9-0.5-1.9-0.9-2.8-1
+	l-0.1-3l-5.4,0.2l0.1,3c-1,0.2-1.9,0.7-2.7,1.2l-2.2-2.1l-3.7,4l2.2,2.1c-0.5,0.9-0.9,1.9-1,2.8l-3,0.1l0.2,5.4l3-0.1
+	C-33.6,130-33.2,130.9-32.6,131.7z M-23.7,118.6c4.1-0.1,7.4,3,7.5,7.1s-3,7.4-7.1,7.5s-7.4-3-7.5-7.1
+	C-30.9,122.1-27.7,118.7-23.7,118.6z M-22.2,149.3l-0.1-3.7l-2.9,0.1c-0.1-0.2-0.1-0.4-0.2-0.5l2.1-2.1l-2.7-2.6l-2,2.1
+	c-0.2-0.1-0.4-0.2-0.6-0.2l-0.1-2.9l-3.7,0.1l0.1,2.9c-0.1,0-0.2,0.1-0.4,0.2c-0.1,0-0.2,0.1-0.2,0.1l-2.1-2l-2.6,2.7l2.1,2
+	c-0.1,0.2-0.2,0.4-0.2,0.6l-2.9,0.1l0.1,3.7l2.9-0.1c0.1,0.2,0.2,0.4,0.2,0.5l-2.1,2.2l2.7,2.6l2.1-2.2c0.2,0.1,0.3,0.1,0.5,0.2
+	l0.1,3l3.7-0.1l-0.1-3c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.1,0,0.2-0.1l2.2,2.1l2.6-2.7l-2.2-2.1c0.1-0.2,0.2-0.3,0.2-0.5L-22.2,149.3z
+	 M-28.3,148.9c-0.6,1.1-2,1.6-3.1,1c-1.1-0.6-1.6-2-1-3.1c0.6-1.1,2-1.6,3.1-1C-28.2,146.4-27.8,147.8-28.3,148.9z M-37.4,140.8
+	l-3.6-3.3c0.1-0.3,0.3-0.6,0.4-0.9l4.9-0.1l-0.2-6.1l-4.9,0.1c-0.1-0.3-0.2-0.6-0.4-0.9l3.3-3.6l-4.4-4.2l-3.3,3.6
+	c-0.2-0.1-0.4-0.2-0.6-0.2c-0.1,0-0.2-0.1-0.4-0.2l-0.1-4.8l-6.1,0.2l0.1,4.8c-0.3,0.1-0.6,0.2-0.9,0.4l-3.5-3.3l-4.2,4.4l3.6,3.3
+	c-0.1,0.3-0.3,0.6-0.4,0.9L-63,131l0.2,6.1l5-0.2c0.1,0.3,0.2,0.5,0.4,0.8l-3.4,3.7l4.4,4.2l3.4-3.7c0.2,0.1,0.3,0.1,0.4,0.2
+	c0.1,0,0.2,0.1,0.3,0.1l0.2,5.1l6.1-0.2l-0.2-5c0.3-0.1,0.5-0.2,0.8-0.3l3.7,3.4L-37.4,140.8z M-47.7,139.3c-3,0.9-6.3-0.8-7.2-3.8
+	c-0.9-3,0.8-6.3,3.8-7.2c3-0.9,6.3,0.8,7.2,3.8C-42.9,135.1-44.6,138.3-47.7,139.3z M25.8,96.7c8.6,0,15.6,7,15.6,15.6
+	s-7,15.6-15.6,15.6s-15.6-7-15.6-15.6S17.2,96.7,25.8,96.7z M45.4,131.9H9.9c-5.1,0-10.2,0.7-13.9,5.7c-1.6,2.5-16.4,21.1-16.4,21.1
+	h-20.8c-3.7,0-6.8,3.1-6.8,6.8s3.1,6.8,6.8,6.8h23.7c1.7,0,3.5-0.7,4.7-2l13.9-16.9c0.4-0.4,0.7-0.6,1.4-0.6c1.1,0,2,0.7,2,2v30.6
+	h43v-30.1c0-1.1,0.7-2,2-2c1.1,0,2,0.7,2,2v30.2H65v-34.1C65,140.7,56.2,131.9,45.4,131.9z" />
+        </symbol>
+    </svg>
+
+    <!-- header and navbar -->
+    <header id="home">
+        <nav class="nav-bar nav-bar-light sticky-top  border-bottom border-secondary bg-dark ">
+            <ul class="nav nav-pills d-none d-sm-flex justify-content-lg-start justify-content-center p-3"
+                id="pills-tab" role="tablist">
+                <li class="nav-item p-2" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true" onclick="goTo(event)">Home</button>
                 </li>
-                <li>
-                    <a href="#biography">Biography</a>
+                <li class="nav-item p-2" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false" onclick="goTo(event)">Profile</button>
                 </li>
-                <li>
-                    <a href="#skills">Skills</a>
+                <li class="nav-item p-2" role="presentation">
+                    <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
+                        type="button" role="tab" aria-controls="pills-skills" aria-selected="false"
+                        onclick="goTo(event)">Skills</button>
                 </li>
-                <li>
-                    <a href="#projects">Projects</a>
+                <li class="nav-item p-2" role="presentation">
+                    <button class="nav-link" id="pills-projects-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-projects" type="button" role="tab" aria-controls="pills-projects"
+                        aria-selected="false" onclick="goTo(event)">Projects</button>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li class="nav-item p-2" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false" onclick="goTo(event)">Contact</button>
                 </li>
             </ul>
         </nav>
+
+        <div class="d-flex d-sm-none sticky-top justify-content-end bg-transparent">
+            <div class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <i class="bi bi-list fs-3"></i>
+            </div>
+            <div id="sidebar" class="offcanvas offcanvas-right flex-column">
+                <!-- <button type="button" class="btn btn-close pt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                <button type="button" id="home-btn" class="btn" onclick="goTo(event)">
+                    <i class="bi bi-house"></i>
+                </button>
+                <button type="button" id="profile-btn" class="btn" onclick="goTo(event)"><i
+                        class="fi fi-rr-portrait"></i>
+                </button>
+                <button type="button" id="skills-btn" class="btn" onclick="goTo(event)"><i
+                        class="fi fi-tr-brain-circuit"></i>
+                </button>
+                <button type="button" id="projects-btn" class="btn" onclick="goTo(event)"><i class="bi bi-kanban"></i>
+                </button>
+                <button type="button" id="contact-btn" class="btn" onclick="goTo(event)"><i class="bi bi-envelope"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5 ">
+            <div class="container px-5 text-md-center">
+                <h3 class="display-5 my-2">Hello there! I am</h3>
+                <h1 class="display-2 fw-bold my-4">Ye Myat Paing</h1>
+                <h3 class="display-5 my-2">Welcome to my Full-Stack Engineer Portfolio!</h3>
+            </div>
+            <div class="container-md px-5 py-3 my-3">
+                <div class="row mx-5 my-3 flex-shrink-0">
+                    <div class="col d-none d-sm-flex justify-content-center">
+                        <button type="button" class="btn btn-primary fs-md-5" id="projects-btn" onclick="goTo(event)">
+                            See Projects
+                        </button>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary fs-md-5" id="gitHub-btn" onclick="goTo(event)">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
-    <section id="biography" class="biography">
-        <div class="bio-container">
-            <h2>Ye Myat Paing - Age 21</h2>
-            <article>
-                <p>
-                    Enthusiastic and detail-oriented Junior <strong>Full-stack Engineer</strong> with a solid foundation
-                    in
-                    computer science and programming principles. Adept at collaborating with cross-functional teams to
-                    develop and implement innovative solutions. Passionate about learning new technologies and
-                    solving real-world problems through code.
-                </p>
-            </article>
-        </div>
+    <main class="container-fluid ">
 
-        <div class="card-stack-container">
-            <div class="card-stack">
-                <div class="card">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="profile"
+            class="row row-cols-1 row-cols-lg-2 justify-content-center justify-content-lg-space-between mx-4 py-5">
+            <div class="col py-4">
+                <h2 class="text-center text-md-leftms-lg-3 mb-4">About Me</h2>
+                <div class="me-lg-5 py-3">
 
-    <section id="skills" class="skills">
-        <h2>My Strong Points?</h2>
-        <div class="skill-container">
-            <ul>
-                <li>Well-versed in both front-end and back-end</li>
-                <li>Fast-learner in any programming language or Framework</li>
-                <li>Eager to learn new and modern technologies in development</li>
-                <li>Flexible and comfortable to work with anyone</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>My Works</h2>
-
-        <div class="project-container">
-            <div class="first project-content">
-                <div class="project-detail">
-                    <h3>A Single-Paged Website for a Company</h3>
-                    <p>When I was learning HTML and CSS, I decided to tweak my knowledge and challenge myself how much
-                        innovative I can become. If you would like to view my web project, <a
-                            href="/flexbox-business-site-starting/">Click here.</a></p>
-                </div>
-                <figure class="project-overview">
-                    <img src="./public/image/flexbox-website.PNG" alt="A Single-Paged website of company named LifeO">
-                </figure>
-            </div>
-
-            <div class="project-content">
-                <div class="project-detail">
-                    <h3>A Fully Responsive Club Website</h3>
-                    <p>This project was originally for Codecademy challenge project using my own comprehension of
-                        responsive
-                        designs: <a href="/responsive-club-starting/">To Website -></a></p>
-                </div>
-                <figure class="project-overview">
-                    <img src="./public/image/responsive-club.PNG" alt="A hiking club website, named PaiHub">
-                </figure>
-            </div>
-
-            <div class="project-content">
-                <div class="project-detail">
-                    <h3>A Credit Card Checker project</h3>
-                    <p>Utilizing my knowledge of arrays, iterations and JavaScript built-in Array object methods, I
-                        built
-                        this perfect API for checking credit cards for validation. Note that all validation processes
-                        are
-                        undergone by Luhn's algorithm. <a href="https://github.com/PaiiPai/credit-card-checker">View
-                            Source Code</a></p>
-                </div>
-                <figure class="project-overview">
-                    <img src="./public/image/credit-card-checkerPNG.PNG" alt="Showing screenshot of my source code in VScode">
-                </figure>
-            </div>
-
-            <div class="project-content">
-                <div class="project-detail">
-                    <h3>Bloggo Website</h3>
-                    <p>This server-side website is powered by Node.js/JavaScript and Express.js. This mini project use
-                        the MongoDB
-                        as non-relational database and also includes many other packages in Node.js ecosystem. I learned
-                        a lot of back-end programming concepts and knowledge from
-                        this little project including mircoservices, MVC programming, routing, MongoDB's schema and npm
-                        package management. <a href="https://github.com/PaiiPai/blog-website">View in GitHub >></a></p>
+                    <p class="text-center text-md-leftlh-lg"> I am Ye Myat Paing, a passionate and results-driven
+                        developer
+                        with a comprehensive skill set in both front-end and back-end technologies. From crafting
+                        engaging UIs with
+                        HTML,
+                        CSS,
+                        JavaScript and Bootstrap to building scalable server-side logic using Node.js and Express.js.
+                        Explore the diverse range of projects:
+                    </p>
                 </div>
             </div>
 
+            <div class="col ps-4 py-4">
+                <h2 class="ms-lg-3 ps-lg-4 text-center text-lg-left">Languages, Frameworks &amp; Database</h2>
+                <ul class="list-group my-4 ps-lg-4">
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-brands fa-html5 text-html"></i> HTML
+                    </li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-brands fa-css3-alt text-css"></i> CSS
+                    </li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-brands fa-js text-js"></i>
+                        JavaScript</li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-brands fa-node-js text-nodejs"></i>
+                        Node.js</li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-brands fa-js text-js"></i>
+                        Express.js</li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-brands fa-bootstrap text-bootstrap"></i> Bootstrap
+                    </li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-solid fa-database"></i>
+                        MongoDB</li>
+                    <li class="list-group-item list-group-item-action border border-secondary"><i
+                            class="fa-solid fa-database"></i>
+                        MySQL</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="skills container-fluid px-0">
+            <div class="container px-4 py-5" id="icon-grid">
+                <h2 class="pb-4 border-bottom">My Expertise</h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 py-5">
+                    <div class="col d-flex align-items-start">
+                        <svg class="bi flex-shrink-0 me-3" width="2.75em" height="2.75em">
+                            <use xlink:href="#responsive"></use>
+                        </svg>
+                        <div>
+                            <h3 class="fw-bold lh-base mb-2 fs-4 ">Responsive</h3>
+                            <p class="lh-base mt-2">All front-end website infrastructures I develop and build are
+                                ensured to have responsive
+                                designs.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <svg class="bi flex-shrink-0 me-3" width="3.25em" height="3.25em">
+                            <use xlink:href="#git"></use>
+                        </svg>
+                        <div>
+                            <h3 class="fw-bold lh-base mb-2 fs-4 ">Version Control</h3>
+                            <p class="lh-base mt-2">I always keep track of my projects, utilizing the Git, Git Lens and
+                                GitHub to their
+                                maximum potential.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <svg class="bi flex-shrink-0 me-3" width="3.25em" height="3.25em">
+                            <use xlink:href="#database"></use>
+                        </svg>
+                        <div>
+                            <h3 class="fw-bold lh-base mb-2 fs-4 ">Database Management</h3>
+                            <p class="lh-base mt-2">Whether it is sql or non-sql, I am fully capable of building models,
+                                schemas, querys and
+                                maintaining collections.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <svg class="bi flex-shrink-0 me-3" width="3.75em" height="3.75em">
+                            <use xlink:href="#api"></use>
+                        </svg>
+                        <div>
+                            <h3 class="fw-bold lh-base mb-2 fs-4 ">APIs</h3>
+                            <p class="lh-base mt-2">Developing RESTful APIs, retrieving JSON data-types, understanding
+                                HTTP methods and
+                                security are my adventages.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <svg class="bi flex-shrink-0 me-3" width="2.75em" height="2.75em">
+                            <use xlink:href="#micro"></use>
+                        </svg>
+                        <div>
+                            <h3 class="fw-bold lh-base mb-2 fs-4 ">Microservice</h3>
+                            <p class="lh-base mt-2">I approach development in a collection of smaller components that
+                                comunicate with each
+                                other.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <svg class="bi flex-shrink-0 me-3" width="3em" height="3em">
+                            <use xlink:href="#solving"></use>
+                        </svg>
+                        <div>
+                            <h3 class="fw-bold lh-base mb-2 fs-4 ">Solution Crafting</h3>
+                            <p class="lh-base mt-2">There is no doubt that my debugging skills are exceptionally high
+                                with the aids of AI technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container-fluid">
+            <h2 class="text-center my-4 lh-lg">My Works</h2>
+            <div class="project-container my-3">
+                <!-- <div class ="first project-content row">
+                    <div class="project-detail col">
+                        <h3 class="fs-4">A Single-Paged Website for a Company</h3>
+                        <p class="fs-5">When I was learning HTML and CSS, I decided to tweak my knowledge and challenge
+                            myself how
+                            much
+                            innovative I can become. If you would like to view my web project, <a
+                                href="/flexbox-business-site-starting/">Click here.</a></p>
+                    </div>
+                    <figure class="project-overview col col">
+                        <img class="img-thumbnail" src="./public/image/flexbox-website.PNG"
+                            alt="A Single-Paged website of company named LifeO">
+                    </figure>
+                </div> -->
+
+                <div class="first project-content row flex-column flex-md-row">
+                    <div class="project-detail col">
+                        <h3 class="text-center lh-lg fs-4">A Hiking Club Website</h3>
+                        <p class="text-center fs-5">This project was originally made when I finished all the courses I
+                            needed for developing websites. This project showcase my fully understanding of responsive
+                            concepts and, simple UIs, and crafted everything familiar to all visitors.
+                            designs: <a href="./responsive-club-starting/">To Website -></a></p>
+                    </div>
+                    <figure class="project-overview col">
+                        <img class="img-thumbnail" src="./public/image/responsive-club.PNG"
+                            alt="A hiking club website, named PaiHub">
+                    </figure>
+                </div>
+
+                <div class="project-content mx-3">
+                    <div class="project-detail">
+                        <h3 class="lh-lg text-center fs-4">A Credit Card Checker project</h3>
+                        <p class="text-center">Utilizing my knowledge of arrays, iterations, condition JavaScript
+                            built-in
+                            Array object methods, I
+                            built
+                            this perfect API for checking credit cards for validation and all validation
+                            processes
+                            are
+                            undergone with Luhn's algorithm. The project involve functionalities such as verifying the
+                            correctness of credit card numbers based on industry-standard algorithms, identifying card
+                            types, or performing other checks related to credit card data. <a
+                                href="https://github.com/PaiiPai/credit-card-checker">View
+                                Source Code</a></p>
+                    </div>
+                </div>
+
+                <div class="project-content mx-3">
+                    <div class="project-detail">
+                        <h3 class="lh-lg text-center fs-4">Bloggo Website</h3>
+                        <p class="text-center">This server-side website is powered by Node.js/JavaScript and Express.js.
+                            This mini project
+                            use
+                            the MongoDB
+                            as non-relational database and also includes many other packages in Node.js ecosystem. I
+                            learned
+                            a lot of back-end programming concepts and knowledge from
+                            this little project including mircoservices, MVC programming, routing, MongoDB's schema and
+                            npm
+                            package management. <a href="https://github.com/PaiiPai/blog-website">View in GitHub >></a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container-fluid d-none d-md-flex row mx-3">
+                <div class="container col d-flex justify-content-start justify-content-lg-center">
+                    <button class="btn btn-secondary" onclick="prev()">&lt;&lt; Previous Project</button>
+                </div>
+                <div class="container col d-flex justify-content-end justify-content-lg-center">
+                    <button class="btn btn-secondary" onclick="next()">Next Project &gt;&gt;</button>
+                </div>
+            </div>
+
+            <div class="container-fluid d-flex d-md-none row mx-3">
+                <div class="container col d-flex justify-content-start justify-content-lg-center">
+                    <button class="btn" type="button" onclick="prev()">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                </div>
+                <div class="container col d-flex justify-content-end justify-content-lg-center">
+                    <button class="btn" type="button" onclick="next()">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact" class="container-fluid d-flex flex-column my-5">
+        <div class="container d-flex justify-content-center">
+            <a class="btn p-1" href="https://www.facebook.com/ye.paing.129">
+                <i class="fi fi-brands-facebook"></i>
+            </a>
+            <a class="btn p-1" href="https://www.instagram.com/ym_pai/">
+                <i class="fi fi-brands-instagram"></i>
+            </a>
+            <a class="btn p-1" href="https://github.com/PaiiPai">
+                <i class="fi fi-brands-github"></i>
+            </a>
+            <a class="btn p-1" href="mailto:paingfamily121@gmail.com">
+                <i class="fi fi-rr-envelope"></i>
+            </a>
+            <a class="btn p-1" href="https://www.linkedin.com/in/ye-myat-paing-4634b6251/">
+                <i class="fi fi-brands-linkedin"></i>
+            </a>
         </div>
-
-        <div class="btn-container">
-            <button class="btn" onclick="prev()">&lt;&lt; Previous Project</button>
-            <button class="btn" onclick="next()">Next Project &gt;&gt;</button>
+        <div class="container d-flex justify-content-center">
+            <a target="_blank" href="https://www.flaticon.com/uicons">Flaticon</a>
         </div>
-
-    </section>
-
-    <div class="attribution">
-        <span>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></span>
-    </div>
-
-    <footer id="contact" class="contact">
-        <p>
-            <a href="https://www.facebook.com/ye.paing.129"><i class="fi fi-brands-facebook"></i></a> | <a
-                href="https://www.instagram.com/ym_pai/"><i class="fi fi-brands-instagram"></i></a> | <a
-                href="https://github.com/PaiiPai"><i class="fi fi-brands-github"></i></a> | <a
-                href="mailto:paingfamily121@gmail.com"><i class="fi fi-rr-envelope"></i></a> | <a
-                href="https://www.linkedin.com/in/ye-myat-paing-4634b6251/"><i class="fi fi-brands-linkedin"></i></a>
-        </p>
     </footer>
 
 </body>
+
+<!-- JS Scripts -->
+<script src="https://kit.fontawesome.com/69c3c37e1d.js" crossorigin="anonymous" aync></script>
+<script src="./js/main.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </html>
