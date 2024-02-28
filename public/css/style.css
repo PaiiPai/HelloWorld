@@ -4,7 +4,7 @@
 }
 
 .border-secondary {
-	border-color: #303030!important;
+	border-color: #303030 !important;
 }
 
 p {
@@ -25,7 +25,7 @@ header {
 	margin: 0 5%;
 	opacity: 0;
 	transform: translateX(-50%);
-    animation: fadeIn 1.5s ease-in-out forwards;
+	animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .photo-container {
@@ -33,7 +33,7 @@ header {
 	overflow: hidden;
 	opacity: 0;
 	transform: translateX(80%);
-    animation: fadeIn 1.5s ease-in-out forwards;
+	animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .photo-container .photo {
@@ -58,10 +58,27 @@ header {
 	animation: fadeIn 1s ease-in-out forwards;
 }
 
+.typing-text {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 1.5s steps(30, end) forwards;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+		white-space: wrap;
+	}
+}
+
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes fall {
@@ -71,25 +88,25 @@ header {
 }
 
 .list-group-item:hover i.text-html {
-	color: #e34c26!important;
+	color: #e34c26 !important;
 }
 
 .list-group-item:hover i.text-css {
-	color: #264de4!important;
+	color: #264de4 !important;
 }
 
 .list-group-item:hover i.text-js {
-	color: #F0DB4F!important;
+	color: #F0DB4F !important;
 	border-radius: 1px;
 }
 
 .list-group-item:hover i.text-nodejs {
-	color: #3c873a!important;
+	color: #3c873a !important;
 	border-radius: 10px;
 }
 
 .list-group-item:hover i.text-bootstrap {
-	color: #563d7c!important;
+	color: #563d7c !important;
 }
 
 .offcanvas {
