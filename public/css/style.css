@@ -20,25 +20,8 @@ header {
 	display: unset;
 }
 
-.intro {
+.my-img {
 	width: 50%;
-	margin: 0 5%;
-	opacity: 0;
-	transform: translateX(-50%);
-	animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-.photo-container {
-	height: 50%;
-	overflow: hidden;
-	opacity: 0;
-	transform: translateX(80%);
-	animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-.photo-container .photo {
-	max-height: 100%;
-	margin: 0 auto;
 }
 
 .name,
