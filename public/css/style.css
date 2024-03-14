@@ -20,6 +20,10 @@ header {
 	display: unset;
 }
 
+section {
+	min-height: 100vh;
+}
+
 .my-img {
 	width: 50%;
 }
@@ -45,6 +49,17 @@ header {
 	overflow: hidden;
 	white-space: nowrap;
 	animation: typing 2s steps(30, end) forwards;
+}
+
+.scrollFade {
+	transform: translateY(50%);
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.scrollFade.reveal {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 @keyframes typing {

@@ -69,3 +69,19 @@ const goTo = (event) => {
     window.location.href = 'https://github.com/PaiiPai';
   }
 }
+
+const scrollFade = () => {
+  const scrollFades = document.getElementsByClassName('scrollFade');
+  const viewportHeight = window.innerHeight;
+  const revealThreshold = 150;
+  for (let fade of scrollFades) {
+    const fadePosition = fade.getBoundingClientRect().top;
+    if (fadePosition < viewportHeight - revealThreshold) {
+      fade.classList.add('reveal');
+    } else {
+      fade.classList.remove('reveal');
+    }
+  }
+}
+
+window.addEventListener('scroll', scrollFade);
